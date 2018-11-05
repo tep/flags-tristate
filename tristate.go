@@ -152,7 +152,8 @@ var ErrBadTriStateValue = errors.New("bad tristate value")
 //     False: 0, f, false, n, no
 //     None:  -1, u, unknown, e, either, b, both, a, all, none, null, nil
 //
-// Any other string will return ErrBadTriStateValue
+// Allstring input is case insensitive. Any string not mentioned above will
+// return ErrBadTriStateValue.
 //
 // Set contributes to the implementation of pflag.Value
 func (ts *TriState) Set(s string) error {
