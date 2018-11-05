@@ -37,7 +37,7 @@
 // The "Var" and "P" suffixes follow the common pflag convention. The "FS"
 // suffix is added to allow the use of alternate FlagSets.
 //
-package tristate
+package tristate // import "toolman.org/flags/tristate"
 
 import (
 	"errors"
