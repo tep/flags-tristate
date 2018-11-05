@@ -1,5 +1,5 @@
 
-[![GoDoc](https://godoc.org/toolman.org/flags/tristate?status.svg)](https://godoc.org/toolman.org/flags/tristate)  [![Go Report Card](https://goreportcard.com/badge/toolman.org/flags/tristate)](https://goreportcard.com/report/toolman.org/flags/tristate) [![Build Status](https://travis-ci.org/tep/flags-tristate.svg?branch=master)](https://travis-ci.org/tep/flags-tristate)
+[![GoDoc](https://godoc.org/toolman.org/flags/tristate?status.svg)](https://godoc.org/toolman.org/flags/tristate) [![Go Report Card](https://goreportcard.com/badge/toolman.org/flags/tristate)](https://goreportcard.com/report/toolman.org/flags/tristate) [![Build Status](https://travis-ci.org/tep/flags-tristate.svg?branch=master)](https://travis-ci.org/tep/flags-tristate)
 
 
 # tristate
