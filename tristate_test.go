@@ -12,9 +12,9 @@ import (
 
 func TestSet(t *testing.T) {
 	tests := map[TriState][]string{
-		None:  []string{"-1", "A", "ALL", "ANY", "All", "Any", "B", "BOTH", "Both", "E", "EITHER", "Either", "NIL", "NONE", "NULL", "Nil", "None", "Null", "U", "UNKNOWN", "Unknown", "a", "all", "any", "b", "both", "e", "either", "nil", "none", "null", "u", "unknown"},
-		False: []string{"0", "F", "FALSE", "False", "N", "NO", "No", "f", "false", "n", "no"},
-		True:  []string{"1", "T", "TRUE", "True", "Y", "YES", "Yes", "t", "true", "y", "yes"},
+		None:  {"-1", "A", "ALL", "ANY", "All", "Any", "B", "BOTH", "Both", "E", "EITHER", "Either", "NIL", "NONE", "NULL", "Nil", "None", "Null", "U", "UNKNOWN", "Unknown", "a", "all", "any", "b", "both", "e", "either", "nil", "none", "null", "u", "unknown"},
+		False: {"0", "F", "FALSE", "False", "N", "NO", "No", "f", "false", "n", "no"},
+		True:  {"1", "T", "TRUE", "True", "Y", "YES", "Yes", "t", "true", "y", "yes"},
 	}
 
 	for want, list := range tests {
