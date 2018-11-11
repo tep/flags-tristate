@@ -52,6 +52,37 @@ func TestString(t *testing.T) {
 	}
 }
 
+func TestMatch(t *testing.T) {
+	for _, ts := range []TriState{None, False, True} {
+		for _, nv := range []bool{false, true} {
+			for _, v := range []bool{false, true} {
+				var want bool
+				switch ts {
+				case None:
+					want = nv
+				case False:
+					want = !v
+				case True:
+					want = v
+				}
+
+				if got := ts.Match(v, nv); got != want {
+					t.Errorf("ts.Match(%v, %v) == %v; Wanted %v", v, nv, got, want)
+				}
+			}
+		}
+	}
+}
+
+func TestIsSet(t *testing.T) {
+	for _, ts := range []TriState{None, False, True} {
+		want := ts != None
+		if got := ts.IsSet(); got != want {
+			t.Errorf("TriState(%v).IsSet() == %v; Wanted %v", ts, got, want)
+		}
+	}
+}
+
 type flagOptions struct {
 	dflt TriState
 	args string

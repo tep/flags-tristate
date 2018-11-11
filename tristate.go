@@ -184,3 +184,17 @@ func (ts *TriState) Bool() *bool {
 	}
 	return &b
 }
+
+// Match returns true if ts is not None and matches the boolean value of b.
+// If ts is None, b is ignored and noneVal is returned.
+func (ts *TriState) Match(b, noneVal bool) bool {
+	if bp := ts.Bool(); bp != nil {
+		return *bp == b
+	}
+	return noneVal
+}
+
+// IsSet returns false if ts is None, otherwise true.
+func (ts *TriState) IsSet() bool {
+	return *ts != None
+}
