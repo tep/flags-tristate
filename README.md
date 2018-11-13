@@ -1,8 +1,6 @@
 
-[![GoDoc](https://godoc.org/toolman.org/flags/tristate?status.svg)](https://godoc.org/toolman.org/flags/tristate) [![Go Report Card](https://goreportcard.com/badge/toolman.org/flags/tristate)](https://goreportcard.com/report/toolman.org/flags/tristate) [![Build Status](https://travis-ci.org/tep/flags-tristate.svg?branch=master)](https://travis-ci.org/tep/flags-tristate)
+# tristate [![Mit License][mit-img]][mit] [![GitHub Release][release-img]][release] [![GoDoc][godoc-img]][godoc] [![Go Report Card][reportcard-img]][reportcard] [![Build Status][travis-img]][travis]
 
-
-# tristate
 `import "toolman.org/flags/tristate"`
 
 * [Install](#pkg-install)
@@ -223,3 +221,18 @@ String contributes to the implementation of pflag.Value
 func (ts *TriState) Type() string
 ```
 Type contributes to the implementation of pflag.Value
+
+[mit-img]: http://img.shields.io/badge/License-MIT-c41e3a.svg
+[mit]: https://github.com/tep/flags-tristate/blob/master/LICENSE
+
+[release-img]: https://img.shields.io/github/release/tep/flags-tristate/all.svg
+[release]: https://github.com/tep/flags-tristate/releases
+
+[godoc-img]: https://godoc.org/toolman.org/flags/tristate?status.svg
+[godoc]: https://godoc.org/toolman.org/flags/tristate
+
+[reportcard-img]: https://goreportcard.com/badge/toolman.org/flags/tristate
+[reportcard]: https://goreportcard.com/report/toolman.org/flags/tristate
+
+[travis-img]: https://travis-ci.org/tep/flags-tristate.svg?branch=master
+[travis]: https://travis-ci.org/tep/flags-tristate
